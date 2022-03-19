@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My CV</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="page-header">
+                <div class="navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#exp">Experience</a></li>
+                        <li class="nav-item"><a href="#edu">Education</a></li>
+                        <li class="nav-item"><a href="#contacts">Contacts</a></li>
+                        <li class="nav-item"><a href="#skills">Skills</a></li>
+                        <li class="nav-item"><a href="#langs">Languages</a></li>
+                        <li class="nav-item"><a href="#code">Code</a></li>
+                    </ul>
+                </div>    
+            </div>                           
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-info">
+
+                <section class="contacts-and-skills">
+                    <div class="ava">
+                        <img src="assets/img/ava.jpg" alt="anime girl" id="my-avatar">
+                    </div>
+                    <div class="contact-info">
+                        <h3 id="contacts"><i class="fas fa-address-book"></i> Contacts</h3>
+                        <ul class="contact-list">
+                            <li><i class="fas fa-mobile-alt"></i><strong> Mobile: </strong> +46 72 044 70 61</li>
+                            <li><i class="fas fa-envelope-square"></i><strong> Email: </strong> sviatlana_kliautsova@icloud.com</li>
+                            <li><i class="fab fa-discord"></i><strong> Discord: </strong>Sviatlana(@Svetik-K)</li>
+                            <li><i class="fab fa-github"></i><strong> GitHub: </strong><a href="https://github.com/Svetik-K" target="_blank">Svetik-K</a></li>
+                        </ul>             
+                    </div>
+                    <br>
+                    <div class="skill-info">
+                        <h3 id="skills"><i class="fas fa-code-branch"></i> Skills</h3>
+                        <ul class="skill-list">
+                            <li>HTML5, CSS3</li>
+                            <li>JavaScript Basics</li>
+                            <li>Git, GitHub</li>
+                            <li>C#, .NET Core Basics</li>
+                            <li>VS Code, Visual Studio</li>
+                        </ul>             
+                    </div>
+                    <br>
+                    <div class="lang-info">
+                        <h3 id="langs"><i class="fas fa-language"></i> Languages</h3>
+                        <ul class="lang-list">
+                            <li>Russian - Native speaker</li>
+                            <li>English - C1</li>
+                            <li>Swedish - B1</li>
+                        </ul>             
+                    </div>
+                    <br>
+                    <div class="code-snippet">
+                        <h3 id="code"><i class="fas fa-code"></i> Code example</h3>
+                        <pre><code>function correctness(bobsDecisions, expertDecisions) {
+let points = 0;
+for(let i = 0; i &lt; bobsDecisions.length; i++) {
+    if (bobsDecisions[i] === expertDecisions[i]){
+        points += 1;
+    }else if(bobsDecisions[i] === "?" || 
+    expertDecisions[i] === "?" ){
+        points += 0.5;
+    } else {
+        points += 0;
+    }
+  }
+    return points;
+}</code></pre> 
+                    </div>                       
+                </section>
+                
+                <section class="basics">
+                    <div class="page-title">
+                        <h1 id="my-name">Sviatlana Kliautsova</h1> 
+                        <p><i>junior front-end developer</i></p>
+                    </div>
+                    <div class="about-me">
+                        <h3 id="about"><i class="fas fa-paw"></i> About Me</h3>
+                        <p>Hello, everyone! 👋 Not so long ago I decided that my life needs changes and now I'm on my way to acquire new skills as a front-end developer. I'm persuaded that it's never too late to learn new things and try yourself in different professions. I love coding and interested in everything connected with the IT-branch (from development to testing). Always eager to learn something new and develop myself as a specialist.</p>
+                    </div>
+                    <div class="experience">
+                        <h3 id="exp"><i class="fas fa-laptop-code"></i> Experience</h3>
+                        <p>I'm just at the beginning of my path as a front-end developer and haven't got any working experience yet.</p>
+                    </div>
+                    <div class="education">
+                        <h3 id="edu"><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <ul class="edu-list">
+                            <li><strong>Basic: </strong>Vitebsk State University, Foreign language teacher</li>
+                            <li><strong>Courses: </strong>
+                                <ul class="course-list">
+                                    <li>HTML, CSS, JavaScript courses on <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> and <a href="https://scrimba.com/" target="_blank">Scrimba</a></li>
+                                    <li>Object-Oriented Programming (C#), NTI Stockholm</li>
+                                    <li>Modern JavaScript From The Beginning, Udemy (in progress)</li>
+                                    <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+                                    <li>English6 (C1) course, ABF Stockholm</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>       
+        </div> 
+    </main>
+
+    <footer class="container">
+        <div class="footer-content">
+            <div>
+                <a href="https://rs.school/js/" target="_blank"><img src="assets/img/rs_school_js.svg" alt="RS school logo" id="rs-logo"></a>
+                <span class="copy">&copy; 2021 <a href="https://github.com/Svetik-K" target="_blank"><i class="fab fa-github"></i> Svetik-K</a></span>
+            </div>
+            
+            <ul class="social-icons">
+                <li>
+                    <a class="icon" href="#"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li>
+                    <a class="icon" href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a class="icon" href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>   
+        </div>       
+    </footer>
+   
+</body>
+</html>
