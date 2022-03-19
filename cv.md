@@ -5,12 +5,13 @@
 * **Discord:** Sviatlana(@Svetik-K)
 * **GitHub:** [Svetik-K](https://github.com/Svetik-K/)
 ## About myself
-I am interested in everything connected with the IT-sphere (from development to testing). Always eager to learn something new and develop myself as a specialist.
+Just at the beginning of my career path as a front-end developer. Passionate about work with new technologies, interested in everything connected with the IT-sphere (from web development to testing). Always eager to learn something new and develop myself as a specialist.  Able to effectively self-manage during independent projects, as well as collaborate in a team setting.
 ## Skills
 * HTML5, CSS3
-* JavaScript Basics
+* JavaScript 
 * Git, GitHub
 * C#, .NET Core Basics
+* SQL, MySQL, Workbench
 * VS Code, Visual Studio
 ## Code example
 **Codewars:** https://www.codewars.com/kata/554b4ac871d6813a03000035/
