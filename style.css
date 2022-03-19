@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #383639;
+    
+}
+html {
+    scroll-behavior: smooth; 
+}
+
+/* Header */
+.container {
+    margin: 0 auto;
+    max-width: 1300px;    
+}
+.page-header {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    color: #383639; 
+    background-color: #B9A7C2;
+}
+.navigation {
+    margin-right: 20px;
+}
+.nav-list {
+    list-style-type: none;
+    display: inline-flex;
+}
+.nav-item {
+    margin:0 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* Main */
+.main-info {
+    display: flex;
+    flex-direction: row;   
+}
+.ava {
+    display: flex;
+    justify-content: center;
+}
+#my-avatar {
+    width: 120px;
+    height: 120px;
+    margin: 10px 0;
+    border: 3px solid #383639;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+#my-avatar:hover {
+    transform: scale(1.1);
+}
+.contacts-and-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding: 0 20px;
+    background-color: #d9d9f3;
+}
+#contacts, #skills, #langs, #code {
+    padding-left: 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #FFEBE7;    
+}
+.contact-info, .skill-info  {
+    padding-right: 10px;
+}
+.contact-list {
+    list-style-type: none;
+    line-height: 1.7em;
+    font-size: 14px;
+}
+.skill-list  {    
+    list-style-type: circle;
+    line-height: 1.7em;
+    font-size: 14px;    
+}
+.basics {
+    width: 70%;
+    padding: 0 20px;
+    line-height: 1.7em;
+    background-color: #FFEBE7;
+}
+.page-title {
+    padding-left: 40px;
+    padding-bottom: 5px;
+    line-height: normal;
+}
+#about, #exp, #edu {
+    padding-left: 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d9d9f3;
+}
+a {
+    text-decoration: none;
+    color: #383639; 
+    transition: color 0.2s;
+}
+a:hover {
+    color: #AEC5EB;
+}
+
+.lang-list {
+    list-style-type: circle;
+    line-height: 1.7em;
+    font-size: 14px; 
+    height: auto; 
+}
+code {
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+}
+/* Footer */
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #B9A7C2;   
+}
+#rs-logo {
+    width: 100px;
+    padding-left: 20px;
+}
+.copy {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.social-icons {
+    list-style-type: none;
+    display: inline-flex;   
+}
+.icon {
+    color: #383639;
+    padding-right: 15px;
+}
+
+
+
+
