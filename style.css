@@ -13,12 +13,13 @@ html {
 /* Header */
 .container {
     margin: 0 auto;
-    max-width: 1300px;    
+    max-width: 1420px;    
 }
 .page-header {
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
+    padding: 30px;
     color: #383639; 
     background-color: #B9A7C2;
 }
@@ -27,12 +28,31 @@ html {
 }
 .nav-list {
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+
 }
-.nav-item {
-    margin:0 10px;
+.nav-item a {
+    display: block;
+    position: relative;
+    margin-left: 20px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 0%;
+    background-color: #AEC5EB;
+    transition: all ease-in-out 0.3s; 
+}
+.nav-item a:hover::after {
+    width: 100%;
 }
 
 /* Main */
@@ -45,17 +65,10 @@ html {
     justify-content: center;
 }
 #my-avatar {
-    width: 120px;
-    height: 120px;
-    margin: 10px 0;
-    border: 3px solid #383639;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    width:80%;
+    height: auto;
 }
-#my-avatar:hover {
-    transform: scale(1.1);
-}
+
 .contacts-and-skills {
     display: flex;
     flex-direction: column;
@@ -82,6 +95,9 @@ html {
     line-height: 1.7em;
     font-size: 14px;    
 }
+
+/* Basics  */
+
 .basics {
     width: 70%;
     padding: 0 20px;
@@ -93,15 +109,35 @@ html {
     padding-bottom: 5px;
     line-height: normal;
 }
-#about, #exp, #edu {
+#my-name {
+    font-size: 32px;
+}
+#about, #exp, #edu, #proj, #code {
     padding-left: 40px;
     padding-bottom: 5px;
     border-bottom: 2px solid #d9d9f3;
 }
+.project-examples {
+    display: flex;
+    list-style-type: none;
+}
+.project-item {
+    width: 30%;
+    margin-right: 40px;
+}
+.project-item img {
+    width: 100%;
+
+}
+code {
+    display: block;
+    font-size: 12px;
+}
 a {
     text-decoration: none;
     color: #383639; 
-    transition: color 0.2s;
+    transition: 0.5s;
+    cursor: pointer;
 }
 a:hover {
     color: #AEC5EB;
@@ -113,11 +149,7 @@ a:hover {
     font-size: 14px; 
     height: auto; 
 }
-code {
-    display: block;
-    font-size: 12px;
-    overflow: hidden;
-}
+
 /* Footer */
 .footer-content {
     display: flex;

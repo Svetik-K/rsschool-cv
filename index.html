@@ -32,7 +32,7 @@
 
                 <section class="contacts-and-skills">
                     <div class="ava">
-                        <img src="assets/img/ava.jpg" alt="anime girl" id="my-avatar">
+                        <img src="img/PicOfMe.jpg" alt="me" id="my-avatar">
                     </div>
                     <div class="contact-info">
                         <h3 id="contacts"><i class="fas fa-address-book"></i> Contacts</h3>
@@ -50,7 +50,8 @@
                             <li>HTML5, CSS3</li>
                             <li>JavaScript Basics</li>
                             <li>Git, GitHub</li>
-                            <li>C#, .NET Core Basics</li>
+                            <li>Java, OOP</li>
+                            <li>SQL, MySQL Workbench</li>
                             <li>VS Code, Visual Studio</li>
                         </ul>             
                     </div>
@@ -58,44 +59,30 @@
                     <div class="lang-info">
                         <h3 id="langs"><i class="fas fa-language"></i> Languages</h3>
                         <ul class="lang-list">
-                            <li>Russian - Native speaker</li>
                             <li>English - C1</li>
                             <li>Swedish - B1</li>
+                            <li>Belarusian - Native speaker</li>
+                            <li>Russian - Native speaker</li>   
                         </ul>             
                     </div>
                     <br>
-                    <div class="code-snippet">
-                        <h3 id="code"><i class="fas fa-code"></i> Code example</h3>
-                        <pre><code>function correctness(bobsDecisions, expertDecisions) {
-let points = 0;
-for(let i = 0; i &lt; bobsDecisions.length; i++) {
-    if (bobsDecisions[i] === expertDecisions[i]){
-        points += 1;
-    }else if(bobsDecisions[i] === "?" || 
-    expertDecisions[i] === "?" ){
-        points += 0.5;
-    } else {
-        points += 0;
-    }
-  }
-    return points;
-}</code></pre> 
-                    </div>                       
+                                         
                 </section>
                 
                 <section class="basics">
                     <div class="page-title">
                         <h1 id="my-name">Sviatlana Kliautsova</h1> 
-                        <p><i>junior front-end developer</i></p>
                     </div>
                     <div class="about-me">
                         <h3 id="about"><i class="fas fa-paw"></i> About Me</h3>
                         <p>Hello, everyone! 👋 Not so long ago I decided that my life needs changes and now I'm on my way to acquire new skills as a front-end developer. I'm persuaded that it's never too late to learn new things and try yourself in different professions. I love coding and interested in everything connected with the IT-branch (from development to testing). Always eager to learn something new and develop myself as a specialist.</p>
                     </div>
+                    <br>
                     <div class="experience">
                         <h3 id="exp"><i class="fas fa-laptop-code"></i> Experience</h3>
                         <p>I'm just at the beginning of my path as a front-end developer and haven't got any working experience yet.</p>
                     </div>
+                    <br>
                     <div class="education">
                         <h3 id="edu"><i class="fas fa-graduation-cap"></i> Education</h3>
                         <ul class="edu-list">
@@ -103,14 +90,33 @@ for(let i = 0; i &lt; bobsDecisions.length; i++) {
                             <li><strong>Courses: </strong>
                                 <ul class="course-list">
                                     <li>HTML, CSS, JavaScript courses on <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> and <a href="https://scrimba.com/" target="_blank">Scrimba</a></li>
-                                    <li>Object-Oriented Programming (C#), NTI Stockholm</li>
-                                    <li>Modern JavaScript From The Beginning, Udemy (in progress)</li>
-                                    <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+                                    <li>Object-Oriented Programming, NTI Stockholm</li>
+                                    <li>Modern JavaScript From The Beginning, Udemy</li>
+                                    <li>RS Schools Course «JavaScript/Front-end. Stage 0»</li>
                                     <li>English6 (C1) course, ABF Stockholm</li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
+                    <br>
+                    <div class="projects">
+                        <h3 id="proj"><i class="fas fa-graduation-cap"></i> Projects</h3>
+                        <ul class="project-examples">
+                            <li class="project-item"><img src="img/alexa.png" alt="alexa's portfolio"></li>
+                            <li class="project-item"><img src="img/shelter.png" alt="shelter homepage"></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="code-snippet">
+                        <h3 id="code"><i class="fas fa-code"></i> Code example</h3>
+                        <pre><code>        <b>Codewars:</b>         
+        <a><b>https://www.codewars.com/kata/554b4ac871d6813a03000035/</b></a> 
+        function highAndLow(numbers){
+            const numArray = numbers.split(' ').map(item => Number(item));
+            return Math.max(...numArray) + ' ' + Math.min(...numArray);
+        }
+</code></pre> 
+                    </div>  
                 </section>
             </div>       
         </div> 
@@ -119,7 +125,7 @@ for(let i = 0; i &lt; bobsDecisions.length; i++) {
     <footer class="container">
         <div class="footer-content">
             <div>
-                <a href="https://rs.school/js/" target="_blank"><img src="assets/img/rs_school_js.svg" alt="RS school logo" id="rs-logo"></a>
+                <a href="https://rs.school/js/" target="_blank"><img src="img/rs_school_js.svg" alt="RS school logo" id="rs-logo"></a>
                 <span class="copy">&copy; 2021 <a href="https://github.com/Svetik-K" target="_blank"><i class="fab fa-github"></i> Svetik-K</a></span>
             </div>
             
