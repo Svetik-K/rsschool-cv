@@ -6,18 +6,23 @@ body {
     color: #383639;
     
 }
+
 html {
     scroll-behavior: smooth; 
 }
-
-/* Header */
 .container {
     margin: 0 auto;
-    max-width: 1420px;    
+    max-width: 1420px;   
 }
+
+
+/* Header */
+
 .page-header {
     display: flex;
+    flex-direction: row;
     justify-content: right;
+    align-items: center;
     flex-wrap: wrap;
     padding: 30px;
     color: #383639; 
@@ -30,9 +35,6 @@ html {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin: 0;
-
 }
 .nav-item a {
     display: block;
@@ -56,13 +58,15 @@ html {
 }
 
 /* Main */
-.main-info {
+.main-container {
+    width: 100%;
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;  
 }
 .ava {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 #my-avatar {
     width:80%;
@@ -72,9 +76,9 @@ html {
 .contacts-and-skills {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     width: 30%;
-    padding: 0 20px;
+    padding: 20px 20px;
     background-color: #d9d9f3;
 }
 #contacts, #skills, #langs, #code {
@@ -119,19 +123,28 @@ html {
 }
 .project-examples {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
 }
 .project-item {
-    width: 30%;
+    width: 40%;
     margin-right: 40px;
+    transition: 0.5s;
 }
-.project-item img {
+.project-item:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.project-item a img {
     width: 100%;
-
+    height: 100%;
 }
 code {
     display: block;
     font-size: 12px;
+    overflow:auto;
 }
 a {
     text-decoration: none;
@@ -151,11 +164,13 @@ a:hover {
 }
 
 /* Footer */
+
 .footer-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
+    padding: 30px 10px;
     background-color: #B9A7C2;   
 }
 #rs-logo {
@@ -163,12 +178,12 @@ a:hover {
     padding-left: 20px;
 }
 .copy {
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 10px;
 }
 .social-icons {
     list-style-type: none;
-    display: inline-flex;   
+    display: flex;   
 }
 .icon {
     color: #383639;
