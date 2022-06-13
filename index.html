@@ -9,33 +9,34 @@
     <title>My CV</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="page-header">
-                <div class="navigation">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#about">About</a></li>
-                        <li class="nav-item"><a href="#exp">Experience</a></li>
-                        <li class="nav-item"><a href="#edu">Education</a></li>
-                        <li class="nav-item"><a href="#contacts">Contacts</a></li>
-                        <li class="nav-item"><a href="#skills">Skills</a></li>
-                        <li class="nav-item"><a href="#langs">Languages</a></li>
-                        <li class="nav-item"><a href="#code">Code</a></li>
-                    </ul>
-                </div>    
-            </div>                           
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="main-info">
-
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="page-header">
+                    <div class="navigation">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#about">About</a></li>
+                            <li class="nav-item"><a href="#exp">Experience</a></li>
+                            <li class="nav-item"><a href="#edu">Education</a></li>
+                            <li class="nav-item"><a href="#contacts">Contacts</a></li>
+                            <li class="nav-item"><a href="#skills">Skills</a></li>
+                            <li class="nav-item"><a href="#langs">Languages</a></li>
+                            <li class="nav-item"><a href="#code">Code</a></li>
+                        </ul>
+                    </div>    
+                </div>                           
+            </div>
+        </header>
+        <!-- Main -->
+        <main>
+            <div class="main-container">
                 <section class="contacts-and-skills">
                     <div class="ava">
                         <img src="img/PicOfMe.jpg" alt="me" id="my-avatar">
                     </div>
                     <div class="contact-info">
-                        <h3 id="contacts"><i class="fas fa-address-book"></i> Contacts</h3>
+                        <h2 id="contacts"><i class="fas fa-address-book"></i> Contacts</h2>
                         <ul class="contact-list">
                             <li><i class="fas fa-mobile-alt"></i><strong> Mobile: </strong> +46 72 044 70 61</li>
                             <li><i class="fas fa-envelope-square"></i><strong> Email: </strong> sviatlana_kliautsova@icloud.com</li>
@@ -45,7 +46,7 @@
                     </div>
                     <br>
                     <div class="skill-info">
-                        <h3 id="skills"><i class="fas fa-code-branch"></i> Skills</h3>
+                        <h2 id="skills"><i class="fas fa-code-branch"></i> Skills</h2>
                         <ul class="skill-list">
                             <li>HTML5, CSS3</li>
                             <li>JavaScript Basics</li>
@@ -53,11 +54,12 @@
                             <li>Java, OOP</li>
                             <li>SQL, MySQL Workbench</li>
                             <li>VS Code, Visual Studio</li>
+                            <li>manual testing</li>
                         </ul>             
                     </div>
                     <br>
                     <div class="lang-info">
-                        <h3 id="langs"><i class="fas fa-language"></i> Languages</h3>
+                        <h2 id="langs"><i class="fas fa-language"></i> Languages</h2>
                         <ul class="lang-list">
                             <li>English - C1</li>
                             <li>Swedish - B1</li>
@@ -74,77 +76,78 @@
                         <h1 id="my-name">Sviatlana Kliautsova</h1> 
                     </div>
                     <div class="about-me">
-                        <h3 id="about"><i class="fas fa-paw"></i> About Me</h3>
+                        <h2 id="about"><i class="fas fa-paw"></i> About Me</h2>
                         <p>Hello, everyone! 👋 Not so long ago I decided that my life needs changes and now I'm on my way to acquire new skills as a front-end developer. I'm persuaded that it's never too late to learn new things and try yourself in different professions. I love coding and interested in everything connected with the IT-branch (from development to testing). Always eager to learn something new and develop myself as a specialist.</p>
                     </div>
                     <br>
                     <div class="experience">
-                        <h3 id="exp"><i class="fas fa-laptop-code"></i> Experience</h3>
+                        <h2 id="exp"><i class="fas fa-laptop-code"></i> Experience</h2>
                         <p>I'm just at the beginning of my path as a front-end developer and haven't got any working experience yet.</p>
                     </div>
                     <br>
                     <div class="education">
-                        <h3 id="edu"><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <h2 id="edu"><i class="fas fa-graduation-cap"></i> Education</h2>
                         <ul class="edu-list">
                             <li><strong>Basic: </strong>Vitebsk State University, Foreign language teacher</li>
                             <li><strong>Courses: </strong>
                                 <ul class="course-list">
                                     <li>HTML, CSS, JavaScript courses on <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> and <a href="https://scrimba.com/" target="_blank">Scrimba</a></li>
-                                    <li>Object-Oriented Programming, NTI Stockholm</li>
+                                    <li>Object-Oriented Programming, NTI School</li>
                                     <li>Modern JavaScript From The Beginning, Udemy</li>
                                     <li>RS Schools Course «JavaScript/Front-end. Stage 0»</li>
-                                    <li>English6 (C1) course, ABF Stockholm</li>
+                                    <li>English6 (C1) course, ABF School</li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                     <br>
                     <div class="projects">
-                        <h3 id="proj"><i class="fas fa-graduation-cap"></i> Projects</h3>
+                        <h2 id="proj"><i class="fas fa-project-diagram"></i> Projects</h2>
                         <ul class="project-examples">
-                            <li class="project-item"><img src="img/alexa.png" alt="alexa's portfolio"></li>
-                            <li class="project-item"><img src="img/shelter.png" alt="shelter homepage"></li>
+                            <li class="project-item"><a href="https://svetik-k.github.io/portfolio_figma/portfolio/"><img src="img/alexa.png" alt="alexa's portfolio"></a></li>
+                            <li class="project-item"><a href="https://svetik-k.github.io/Shelter/shelter/pages/main/"><img src="img/shelter.png" alt="shelter homepage"></a></li>
                         </ul>
                     </div>
                     <br>
                     <div class="code-snippet">
-                        <h3 id="code"><i class="fas fa-code"></i> Code example</h3>
+                        <h2 id="code"><i class="fas fa-code"></i> Code example</h2>
                         <pre><code>        <b>Codewars:</b>         
         <a><b>https://www.codewars.com/kata/554b4ac871d6813a03000035/</b></a> 
         function highAndLow(numbers){
             const numArray = numbers.split(' ').map(item => Number(item));
             return Math.max(...numArray) + ' ' + Math.min(...numArray);
         }
-</code></pre> 
+                        </code></pre> 
                     </div>  
-                </section>
+                </section>      
+            </div> 
+        </main>
+        <!-- Footer -->
+        <footer class="footer-container">
+            <div class="footer-content">
+                <div>
+                    <a href="https://rs.school/js/" target="_blank"><img src="img/rs_school_js.svg" alt="RS school logo" id="rs-logo"></a>
+                    <span class="copy">&copy; 2022 <a href="https://github.com/Svetik-K" target="_blank"><i class="fab fa-github"></i> Svetik-K</a></span>
+                </div>
+                
+                <ul class="social-icons">
+                    <li>
+                        <a class="icon" href="#"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a class="icon" href="#"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                        <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a class="icon" href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>   
             </div>       
-        </div> 
-    </main>
-
-    <footer class="container">
-        <div class="footer-content">
-            <div>
-                <a href="https://rs.school/js/" target="_blank"><img src="img/rs_school_js.svg" alt="RS school logo" id="rs-logo"></a>
-                <span class="copy">&copy; 2021 <a href="https://github.com/Svetik-K" target="_blank"><i class="fab fa-github"></i> Svetik-K</a></span>
-            </div>
-            
-            <ul class="social-icons">
-                <li>
-                    <a class="icon" href="#"><i class="fab fa-twitter-square"></i></a>
-                </li>
-                <li>
-                    <a class="icon" href="#"><i class="fab fa-facebook-square"></i></a>
-                </li>
-                <li>
-                    <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a class="icon" href="#"><i class="fab fa-linkedin"></i></a>
-                </li>
-            </ul>   
-        </div>       
-    </footer>
+        </footer>
+    </div>
+    
    
 </body>
 </html>
