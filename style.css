@@ -2,19 +2,28 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: #383639;
     
 }
-
 html {
     scroll-behavior: smooth; 
+    box-sizing: border-box;
 }
 .container {
     margin: 0 auto;
     max-width: 1420px;   
 }
-
+a {
+    text-decoration: none;
+    color: #383639; 
+    transition: 0.5s;
+    cursor: pointer;
+}
+a:hover {
+    color: #AEC5EB;
+}
 
 /* Header */
 
@@ -58,6 +67,7 @@ html {
 }
 
 /* Main */
+
 .main-container {
     width: 100%;
     display: flex;
@@ -72,6 +82,8 @@ html {
     width:80%;
     height: auto;
 }
+
+/* Contacts and skills */
 
 .contacts-and-skills {
     display: flex;
@@ -99,6 +111,12 @@ html {
     line-height: 1.7em;
     font-size: 14px;    
 }
+.lang-list {
+    list-style-type: circle;
+    line-height: 1.7em;
+    font-size: 14px; 
+    height: auto; 
+}
 
 /* Basics  */
 
@@ -123,46 +141,53 @@ html {
 }
 .project-examples {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
     list-style-type: none;
 }
 .project-item {
+    position: relative;
     width: 40%;
-    margin-right: 40px;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-.project-item:hover {
-    transform: scale(1.05);
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-.project-item a img {
+}  
+.project-item img {
+    display: block;
     width: 100%;
+    height: auto;
+} 
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: all 0.5s ease;
+} 
+.project-item:hover .overlay {
     height: 100%;
-    border-radius: 10px;
+} 
+.project-name {
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.project-name a {
+    color: rgba(255, 255, 255, 1);
+}
+.project-name a:hover {
+    color: #383639;
 }
 code {
     display: block;
     font-size: 12px;
     overflow:auto;
-}
-a {
-    text-decoration: none;
-    color: #383639; 
-    transition: 0.5s;
-    cursor: pointer;
-}
-a:hover {
-    color: #AEC5EB;
-}
-
-.lang-list {
-    list-style-type: circle;
-    line-height: 1.7em;
-    font-size: 14px; 
-    height: auto; 
 }
 
 /* Footer */
